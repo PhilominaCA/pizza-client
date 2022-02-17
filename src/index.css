@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header{
+  height:15vh;
+  background-color: orange;
+  color: white;
+}
+
+header span{
+  font-size: 1.5vw;
+}
+
+.signup-page{
+  width: 60vw;
+  padding-left: 10vw;
+  height: 110vh;
+  padding-bottom: 10vh;
+}
+
+.signup-page button{
+  border: none;
+  background-color: orange;
+  color: white;
+  font-size: large;
+
+}
+h2{
+  color: orange;
+}
