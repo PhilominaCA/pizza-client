@@ -16,26 +16,235 @@ header{
   height:15vh;
   background-color: orange;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2vw;
+  padding-right: 10vw;
+  padding-top: 2vw;
 }
-
+h1{
+  font-family: cursive;
+}
 header span{
   font-size: 1.5vw;
+display: flex;
+gap:4vw
+}
+
+header a{
+  font-family: cursive;
+  color: black;
+  text-decoration: none;
 }
 
 .signup-page{
-  width: 60vw;
-  padding-left: 10vw;
-  height: 110vh;
-  padding-bottom: 10vh;
+  width: 65vw;
+  padding: 3vw;
+  height: 79vh;
+  /* padding-bottom: 10vh; */
+  margin-left: 15vw;
+  background-color: rgb(241, 188, 89);
+  margin-top: 2vw;
 }
 
 .signup-page button{
   border: none;
-  background-color: orange;
-  color: white;
   font-size: large;
-
+font-weight: bold;
 }
 h2{
-  color: orange;
+  font-family: cursive;
+}
+
+.body-div{
+  /* background-image: url('https://c32-cdn.guidingtech.com/optim/assets/189868/HD-Mouth-Watering-Food-Wallpapers-for-Desktop-11_4d470f76dc99e18ad75087b1b8410ea9.jpg?1573743471'); */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-image: url('https://wallpapercave.com/wp/wp3108352.jpg'); */
+    /* background-image: url('https://media.istockphoto.com/photos/pizza-plain-with-4-types-of-cheese-sliced-pizza-picture-id1219608808?k=20&m=1219608808&s=612x612&w=0&h=dXh_-vS2cvQsKjE6bEmWThRUtmcYXgOss64t-oop9WI='); */
+background-color: orange;
+    display: flex;
+justify-content: flex-end;
+height: 90vh;
+width: 100vw;
+padding-top: 4vw;
+/* filter: blur(1px);
+-webkit-filter: blur(1px); */
+}
+.food-quote{
+  padding-right: 8vw;
+  /* padding-left: 8vw; */
+
+  font-size: 5vw;
+  width: 40vw;
+  font-family: Papyrus;
+text-align: end;
+}
+
+.body-div img{
+width: 60vw;
+height: 70vh;
+padding-left: 4vw;
+padding-right: 4vw;
+padding-top: 1vw;
+padding-bottom: 1vw;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown a
+  {
+    display: flex;
+align-items: center;}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: orange;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-size: 1.2vw;
+  color: black;
+  padding: 0.4vw 0.4vw;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: white}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dasboard-div{
+  width: 50vw;
+  height: 70vh;
+  background-color: rgb(247, 182, 62);
+  padding: 2vw;
+  font-family: cursive;
+  margin-left: 25vw;
+  margin-top: 2vw;
+}
+
+.dasboard-div h3{
+  color:white;
+}
+
+.dasboard-div a{
+  text-decoration: none;
+  color: rgb(9, 11, 112);
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+}
+
+.menu-list-item{
+  /* box-shadow: 10px 10px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 27vw;
+height: 55vh;
+justify-content: space-between;
+font-family: cursive;
+padding: 1vw;
+}
+
+.menu-list-item img{
+  height: 40vh;
+  width: 25vw;
+}
+
+.page-div{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 2vw;
+  grid-column-gap: 2vw;
+}
+
+.custom-list-item{
+  display: flex;
+  font-family: cursive;
+font-size: 1.2vw;
+  /* grid-template-columns: auto auto auto auto auto; */
+  /* grid-column-gap: 2vw; */
+  /* grid-row-gap: 6vh; */
+  column-gap: 4vw;
+  /* width: 80vw; */
+  flex-wrap: wrap;
+  row-gap: 6vh;
+}
+
+.custom-list-item div{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 38vh;
+  width: 15vw;
+  padding: 0.5vw;
+}
+
+.custom-list-item img{
+  height: 25vh;
+  width: 14vw;
+  object-fit:cover;
+}
+
+h4{
+  color: white;
+  font-family: cursive;
+  border: 1px solid orange;
+background-color: orange;
+width: 35vw;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+text-align: center;
+}
+
+.cart-div{
+  padding-top: 4vw;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4vw;
+  row-gap: 4vh;
+}
+
+
+.cart-list-item{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 45vh;
+  width: 18vw;
+  padding: 0.5vw;
+}
+
+.cart-list-item img{
+  height: 25vh;
+  width: 17vw;
+  object-fit:cover;
+}
+
+.check-out-item{
+  display: flex;
+  width: 50vw;
+  height: 25vh;
+  column-gap: 2vw;
+  padding: 2vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.check-out-item img{
+width: 10vw;
+height: 15vh;
+}
+.items-div{
+  width: 60vw;
+  padding: 2vw;
+}
+
+.payment-details{
+  padding: 4vw;
 }

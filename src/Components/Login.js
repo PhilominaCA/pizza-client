@@ -17,12 +17,6 @@ const navigate = useNavigate();
   const {role} = useParams();
   let [msg,setMsg] = useState('');
 
-  // const radios = [
-  //   { name: 'Admin', value: 1 },
-  //   { name: 'User', value: 2 }
-  //   ];
-  //   const [radioValue, setRadioValue] = useState(1);
-
  let handleSubmit = async()=>{
   const loginData = {
     email,
@@ -31,6 +25,7 @@ const navigate = useNavigate();
   let res = await axios.post(`${baseUrl}/login/${role}`,loginData)
   if(res.data.statusCode===200)
   {
+  //  setLog(true)
     console.log(res.data)
     localStorage.setItem("validLogin", res.data.token)
     if(role ==0)
@@ -48,7 +43,6 @@ const navigate = useNavigate();
   return (
     <div>
 <div className='dasboard-div'>
-    <div className='left-div'>
     <h3>Login</h3><hr/>
     <p style={{color:"red"}}>{msg}</p>
     <Form>
@@ -62,34 +56,10 @@ const navigate = useNavigate();
     <Form.Control type="password" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
   </Form.Group>
   <Link to="/forgot-password">Forgot Password?</Link><br/><br/>
-{/* <ButtonGroup>
-  {   
-  radios.map((radio, idx) => (
-          <ToggleButton
-            key={idx}
-            id={`radio-${idx}`}
-            type="radio"
-            variant={idx % 2 ? 'outline-danger' : 'outline-primary'}
-            name="radio"
-            value={radio.value}
-            checked={radioValue === radio.value}
-            onChange={(e) => setRole(e.currentTarget.value)}
-          >
-            {radio.name}
-          </ToggleButton>
-         ))} 
-      </ButtonGroup> */}
-
   <Button variant="outline-dark" style={{width:"100%"}} onClick={()=>handleSubmit()}>
     Login <RiArrowRightLine/>
   </Button>
 </Form>
-    </div>
-    <div className='right-div'>
-        <h3>Welcome !</h3>
-     <h3>Don't have an account?</h3>  <br/>
-     <Link to="/sign-up"> <Button variant="outline-dark" style={{width:"10vw"}}>SignUp <RiLoginCircleLine/></Button> </Link>
-    </div>
 </div>
     </div>
   )

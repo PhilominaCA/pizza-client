@@ -80,9 +80,9 @@ let {id} = useParams();
   }
 
   return (
-    <div className='signup-page'> <h2> SignUp Here!</h2>
+    <div className='signup-page'> <h2> SignUp Here!</h2><br/>
       <form onSubmit={handleSubmit} className="form-div">
-        <TextField id="firstName" style={{width:"100%"}}
+        <TextField id="firstName" style={{width:"47%"}}
           name="firstName"
           label="First Name"
           variant="filled"
@@ -90,8 +90,8 @@ let {id} = useParams();
           onBlur={handleBlur}
           value={values.firstName}
           error={errors.firstName && touched.firstName}
-          helperText={errors.firstName && touched.firstName ? errors.firstName : ""} /><br/><br/>
-        <TextField id="lastName" style={{width:"100%"}}
+          helperText={errors.firstName && touched.firstName ? errors.firstName : ""} />&emsp;&emsp;
+        <TextField id="lastName" style={{width:"47%"}}
           name="lastName"
           label="Last Name"
           variant="filled"
@@ -100,7 +100,7 @@ let {id} = useParams();
           value={values.lastName}
           error={errors.lastName && touched.lastName}
           helperText={errors.lastName && touched.lastName ? errors.lastName : ""} /><br/><br/>
-        <TextField id="email" style={{width:"100%"}}
+        <TextField id="email" style={{width:"47%"}}
           name="email"
           label="Email"
           variant="filled"
@@ -108,8 +108,8 @@ let {id} = useParams();
           onBlur={handleBlur}
           value={values.email}
           error={errors.email && touched.email}
-          helperText={errors.email && touched.email ? errors.email : ""} /><br/><br/>
-        <TextField id="mobile" style={{width:"100%"}}
+          helperText={errors.email && touched.email ? errors.email : ""} />&emsp;&emsp;
+        <TextField id="mobile" style={{width:"47%"}}
           name="mobile"
           label="Mobile"
           variant="filled"
@@ -119,7 +119,7 @@ let {id} = useParams();
           error={errors.mobile && touched.mobile}
           helperText={errors.mobile && touched.mobile ? errors.mobile : ""} /><br/><br/>
         <TextField
-          id="filled-password-input" style={{width:"100%"}}
+          id="filled-password-input" style={{width:"47%"}}
           name="password"
           label="Password"
           type="password"
@@ -129,9 +129,9 @@ let {id} = useParams();
           value={password}
           error={errors.password && touched.password}
           helperText={errors.password && touched.password ? errors.password : ""}
-        /><br/><br/>
+        />&emsp;&emsp;
         <TextField
-          id="filled-password-input" style={{width:"100%"}}
+          id="filled-password-input" style={{width:"47%"}}
           name="confirmPassword"
           label="Confirm Password"
           type="password"
